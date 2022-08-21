@@ -52,10 +52,13 @@ mod tests {
             Blockchain,
         }
         let alice = String::from("alice");
-        let age = 42;
+        let age = 42_u32;
         let speciality = Speciality::Cryptography;
-        assert_eq!("String", type_of!(alice));
+        assert_eq!("alloc::string::String", type_of!(alice));
         assert_eq!("u32", type_of!(age));
-        assert_eq!("Speciality", type_of!(speciality));
+        assert_eq!(
+            "mackerel::introspection::tests::should_get_correct_type::Speciality",
+            type_of!(speciality)
+        );
     }
 }
