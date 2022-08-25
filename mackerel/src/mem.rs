@@ -1,3 +1,15 @@
+/*
+TODO try variable is stored on the stack or on the heam
+enum MemoryLocation {
+    Static,
+    Stack,
+    Heap,
+}
+macro_rules! is_copy {
+    () => {};
+}
+*/
+
 // TODO is needed? can probaby use "ty" type fragment?
 fn size_of_value_helper<T>(_: &T) -> usize {
     std::mem::size_of::<T>()

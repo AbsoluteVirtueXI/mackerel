@@ -1,4 +1,5 @@
 [workspace]
 members = [
-    "mackerel"
+    "mackerel",
+    "mackerel-proc-macros",
 ]
