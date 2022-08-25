@@ -6,6 +6,6 @@ fn hello_world() {
 }
 
 #[test]
-fn it_should_some_code_to_hello_world() {
+fn it_should_add_some_code_to_hello_world() {
     hello_world();
 }
