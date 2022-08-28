@@ -1,6 +1,5 @@
 use std::any;
 
-// TODO remove this and make a generic anonymous function
 fn type_of_helper<T>(_: &T) -> &str {
     any::type_name::<T>()
 }
@@ -54,6 +53,7 @@ mod tests {
         let alice = String::from("alice");
         let age = 42_u32;
         let speciality = Speciality::Cryptography;
+        // type of value
         assert_eq!("alloc::string::String", type_of!(alice));
         assert_eq!("u32", type_of!(age));
         assert_eq!(

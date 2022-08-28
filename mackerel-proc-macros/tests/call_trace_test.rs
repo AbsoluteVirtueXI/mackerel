@@ -7,5 +7,6 @@ fn hello_world() {
 
 #[test]
 fn it_should_add_some_code_to_hello_world() {
+    // cargo test -p mackerel-proc-macros -- --nocapture
     hello_world();
 }
